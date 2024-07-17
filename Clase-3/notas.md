@@ -9,6 +9,13 @@ cd .. -> "salir" de la carpeta actual en la que estamos("una para atras)
 
 cd nombreCarpeta -> cambia su ubicacion a la carpeta interna que colocamos
 
+
+git init
+git add
+git commit
+git remote add origin
+git branch -M main
+git push
 # Github - Gitlab 
 
 "plataforma" en donde podemos subir o manipular la copia de nuestro proyecto junto con otras acciones 
@@ -19,3 +26,4 @@ repositorio local y otro remoto
 
 repo remoto -> "carpeta" que armamos en Github
 repo local -> "carpeta" armada por medio de Git en nuestro equipo
+
