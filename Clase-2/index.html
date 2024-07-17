@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase 2</title>
+</head>
+<body>
+    <h1>Video - Audio</h1>
+
+
+    <section>
+        <video src="./assets/video/video2.mp4" controls loop >
+        </video>
+    </section>
+    <section>
+        <video id="video2" poster="./assets/globos.jpg" >
+            <source src="./assets/video/video2.mp4" type="video/mp4"/>
+            <source src="./assets/video/video2.ogv" type="video/ogv"/>
+        </video>
+
+        <div class="barra-reproduccion">
+            <button onclick="inicioVideo()">PLAY</button>
+            <button onclick="pausaVideo()">PAUSA</button>
+
+            <p class="tiempo-actual"></p>
+            
+        </div>
+    </section>
+    <!-- <section>
+        <h2>HOLA</h2>
+        <button id="boton1">Click</button>
+    </section>
+    <section>
+        <button onclick="cambiarColor(event)" onmouseover="mostrarNodo(this)">Cambiar Color</button>
+    </section> -->
+    <!-- <script src="./repaso2.js"></script> -->
+    <script src="./video.js"></script>
+</body>
+</html>
+
+<!-- atributos video/audio
+controls -> controles predeterminados
+loop -> bucle  
+autoplay -> reproduccion apenas se carga
+muted
+poster
+-->
