@@ -27,3 +27,5 @@ repositorio local y otro remoto
 repo remoto -> "carpeta" que armamos en Github
 repo local -> "carpeta" armada por medio de Git en nuestro equipo
 
+
+
