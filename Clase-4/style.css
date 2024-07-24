@@ -5,6 +5,8 @@
     gap: 20px;
     font-size: 40px;
     color: white;
+    perspective: 800px;/* definimos perspective en el elemento padre para que se vea la transformacion del eje Z.
+    "distancia" del elemento padre y la pantalla*/
 }
 .cubo{
     background-color: brown;
@@ -12,3 +14,47 @@
     height: 200px;
     border: 2px solid black;
 }
+.uno{
+    background-color: cadetblue;
+  transition: all 5s;  /* al colocarlo en el selector y que aplique a todo cambio, tambien lo aplico al colocar la clase "bajar"*/
+}
+.uno:hover{
+    background-color: greenyellow;
+    
+}
+.bajar{
+    transform: translateZ(300px) translateY(200px);/*translate(x,y,z)*/
+}
+.dos{
+    transform: rotateY(50deg) rotateZ(20deg);
+}
+.dos:active{
+    transition: transform 2s;
+    transform: rotateX(50deg);
+}
+.tres{
+    background-color: goldenrod;
+    transform: scaleZ(3) rotateX(-40deg);
+}
+.cuatro{
+    background-color: darkblue;
+    transform: translateY(100px) skewY(30deg) skewX(40deg);
+}
+
+/* transform - transformaciones en el elemento :
+
+- translate
+-rotate ->grados (deg)
+-scale
+-skew -> grados(deg)
+
+por defecto no tenemos definida una perspectiva por lo que en muchas de las transformaciones no vamos a ver ese cambio en el eje Z
+
+propieda "perspective" 
+*/
+/* transition -> hago progesiva un cambio de propiedad.
+    transition: propiedad duracion;
+    duracion : segundos (s) - milisegundos (ms)
+    si colocamos transition dentro de la pseudoclase solo se aplica mientras ejecutamos la accion de la pseudoclase.
+    Si buscamos que la transicion sea en todo cambio, debemos colocar la propiedad transition en el selector del elemento
+*/
