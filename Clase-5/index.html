@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/fast-delivery.png" type="image/x-icon">
+    <title>Clase -5</title>
+</head>
+<body>
+    <h1>Uso de SVG</h1>
+    <img src="./images/ballons.png" alt="">
+    <img src="./images/coffe.jpg" alt="">
+    <img src="./images/heart.svg" alt="">
+    <img src="./archivo.svg" alt="">
+    <!-- SVG -> incorporarlo por medio de la etiqueta <img> o crando nuestro propis <svg> por medio de esta etiqueta -->
+       <h2>Creando un SVG</h2>
+
+        <svg><!-- 500x400-->
+            <rect 
+                y="100" 
+                x="200" 
+                width="170"
+                height="100" 
+                fill="rgba(244,30,11,0.9)"
+                stroke="blue"
+                stroke-width="4"
+                rx="10"
+            ></rect>
+            <circle
+                onclick="agregarMovimiento(this)"
+                cy="220"
+                cx="220"
+                r="80"
+                fill="violet"
+            ></circle>
+            <ellipse
+                cx="10"
+                cy="100"
+                rx="180"
+                ry="60"
+                fill="transparent"
+                stroke="brown"
+                stroke-width="4"
+            ></ellipse>
+
+            <line 
+            x1="440" 
+            y1="100" 
+            x2="480" 
+            y2="10"  
+            stroke="orange" 
+            stroke-width="4"
+            ></line>
+            <polyline 
+                points="200 10, 300 100, 300 140, 250 110"
+                stroke="green"
+                stroke-width="5"
+                fill="none"
+            ></polyline>
+            <polygon
+                points="100 300,150 440,50 50,400 300"
+                stroke="darkblue"
+                stroke-width="5"
+                fill="rgba(200,44,55,0.6)"
+            ></polygon>
+        </svg>
+    <main>
+        <div class="tarjeta">
+            <img src="./images/coffe.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis?</p>
+        </div>
+        <div class="tarjeta">
+            <img src="./images/globos.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis?</p>
+        </div>        
+    </main>
+
+    <svg class="ej2">
+        <circle
+            cy="220"
+            cx="220"
+            r="80"
+            fill="white"
+            stroke="black"
+            stroke-width=5
+        >
+        </circle>
+        <circle
+            cy="220"
+            cx="220"
+            r="20"
+            fill="black"
+        ></circle>
+
+<!-- corazon -->
+        <circle
+            cy="220"
+            cx="220"
+            r="20"
+            fill="black"
+        ></circle>
+        <circle
+            cy="220"
+            cx="220"
+            r="20"
+            fill="black"
+        ></circle>
+        <polygon></polygon>
+        
+    </svg>
+
+<script src="./script.js"></script>
+</body>
+</html>
+
+<!-- etiquetas de SVG : figuras geometricas - forma primitiva 
+    <rect> -> y ,x ,width ,height ,fill ,stroke,stroke-width , rx
+    <circle>
+    <ellipse>
+    <polygon>
+    <polyline> 
+    <line>
+        atributos:
+    x,y,cx,cy -> coordenadas
+    fill -> color del fondo(relleno)
+    stroke -> color del borde
+    stroke-width -> ancho de borde
+    rx-> redondeo de bordes
+    r-> radio de circunferencia
+    ry-rx -> radio de la ellipse
+    x1,x2,y1,y2 -> pares de coordenadas necesarios para crear la imagen
+
+    points=" xy , xy, xy,xy"
+-->
