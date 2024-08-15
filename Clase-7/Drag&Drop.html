@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .zona-destino{
+        width: 80%;
+        height: 200px;
+        background-color: lightcoral;
+        border: 2px solid brown;
+    }
+    </style>
+    <h1 id="titulo" draggable="true">Drag and Drop</h1>
+    <h2 draggable="true" id="subtitulo" onclick="uncolor(this)" ondragstart="dragStart2(event)">Otro titulo</h2>
+    <div class="zona-destino" ondragenter="mostrarDragEnter()" ondragleave="mostrarSalida()" ondragover="eventoOnDragOver(event)" ondrop="eventoDrop(event)">
+        arrastar elemento aqui..
+    </div>
+  
+    <img id="cohete" src="./imagenes/cohete.jpg" alt="cohete" />
+    <a href="#">link a algun lado...</a>
+    <script src="./DragAndDrop.js"></script>
+</body>
+</html>
